@@ -1,0 +1,80 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html>
+    <head>
+        <title>new tab</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="mascots/mascots.js"></script>
+	<script>
+	 function setMascot(mascot)
+	 {
+	     $(".main").css("background-image", "url('mascots/" + mascot + "')");
+	 }
+
+	 $(document).ready(function() {
+	     $(".links").click(function() {
+		 var mascot = mascots[Math.floor(Math.random()*mascots.length)];
+		 setMascot(mascot);
+	     });
+	     var mascot = mascots[Math.floor(Math.random()*mascots.length)];
+	     setMascot(mascot);
+	 });
+	</script>
+        <script>
+	 var countDownDate = new Date("Jan 5, 2018 12:00:00").getTime();
+	 var x = setInterval(function() {
+
+	     var now = new Date().getTime();
+	     var distance = countDownDate - now;
+	     
+	     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	     
+	     document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+						       + minutes + "m " + seconds + "s ";
+	     
+	     if (distance < 0) {
+		 clearInterval(x);
+		 document.getElementById("timer").innerHTML = "GO WATCH IT!";
+	     }
+	 }, 1000);
+	</script>
+    </head>
+    <body>
+        <div class="container">
+	    <div class="main">
+	        <div class="titles">
+	    	    <h1>new tab</h1>
+	    	    <h1>chuu2 in: <span id="timer"></span></h1>
+		</div>
+		<div class="links">
+		    <ul>
+			<li><a href="https://www.reddit.com">reddit</a></li>
+			<li><a href="https://www.twitter.com">twitter</a></li>
+			<li><a href="https://www.github.com">github</a></li>
+		    </ul>
+		    <ul>
+			<li><a href="https://boards.4chan.org/g/">/g/</a></li>
+			<li><a href="https://boards.4chan.org/k/">/k/</a></li>
+			<li><a href="https://boards.4chan.org/int/">/int/</a></li>
+			<li><a href="https://boards.4chan.org/o/">/o/</a></li>
+			<li><a href="https://boards.4chan.org/c/">/lit/</a></li> <!-- yes -->
+			<li><a href="https://boards.4chan.org/w/">/w/</a></li>
+			<li><a href="https://boards.4chan.org/wg/">/wg/</a></li>
+		    </ul>
+		    <ul>
+			<li><a href="http://your-waifu-is-sh.it">your-waifu-is-sh.it</a></li> <!-- my site (best) -->
+		    </ul>
+		    <ul>
+			<li><a href="https://anidex.moe/">anidex</a></li>
+			<li><a href="https://nyaa.pantsu.cat">nyaa.cat</a></li>
+			<li><a href="https://nyaa.si">nyaa.si</a></li>
+		    </ul>
+		</div>
+	    </div>
+        </div>
+    </body>
+</html>
+

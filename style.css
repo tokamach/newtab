@@ -1,0 +1,90 @@
+.container {
+    top: 0px;
+    bottom: 200px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+
+    width: 700px;
+    height: 300px;
+}
+
+.titles {
+/*    display: inline-block; */
+    margin: 18px;
+}
+
+.links {
+    text-align: center;
+    width: auto;
+    position: relative;
+    display: inline-block;
+}
+
+ul {
+    width: 75px;
+    list-style-type: none;
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+.main {
+    display: inline-block;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+
+    margin: auto;
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    /*right: 190px;*/
+
+    width: 900px;
+    height: 300px;
+
+    background-image: url('mascots/mascot4.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.mascot {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+
+    margin: auto;
+    top: -2px;
+    left: 500px;
+
+    position: absolute;
+
+    width: 194px; /* 200 - 3 * 2 */
+    height: 300px;
+
+    overflow: hidden;
+}
+
+h1 {
+}
+
+a {
+    text-decoration: none;
+    color:#000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    font-family:'CyberpunkWaifus';
+    src: url('CyberpunkWaifus.ttf');
+    font-size: 15px;
+}
