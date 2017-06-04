@@ -1,12 +1,13 @@
 .container {
-    top: 0px;
+/*  top: 0px;
     bottom: 200px;
     left: 0px;
     right: 0px;
     margin: auto;
 
     width: 700px;
-    height: 300px;
+    height: 300px; */
+    padding: 10% 0;
 }
 
 .titles {
@@ -32,7 +33,7 @@ ul {
 }
 
 .main {
-    display: inline-block;
+    display: block;
 
     border-style: solid;
     border-width: 2px;
@@ -40,9 +41,10 @@ ul {
 
     margin: auto;
 
-    position: absolute;
+
+    /*position: absolute;*/
     top: 25%;
-    left: 25%;
+    /*left: 25%;*/
     /*right: 190px;*/
 
     width: 900px;
