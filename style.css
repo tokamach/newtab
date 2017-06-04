@@ -74,6 +74,8 @@ ul {
 }
 
 h1 {
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 a {
