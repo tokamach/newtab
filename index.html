@@ -6,6 +6,20 @@
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="mascots/mascots.js"></script>
 	<script>
+	 function dynaColor(fg_col, bg_col)
+	 {
+	     $("body").css("background-color", bg_col);
+	     $(".main").css("background-color", bg_col);
+	     $(".searchbox").css("background-color", bg_col);
+	     $("input").css("background-color", bg_col);
+
+	     $(".main").css("border-color", fg_col);
+	     $(".searchbox").css("border-color", fg_col);
+	     $("h1").css("color", fg_col);
+	     $("a").css("color", fg_col);
+	 }
+	</script>
+	<script>
 	 function setMascot(mascot)
 	 {
 	     $(".main").css("background-image", "url('mascots/" + mascot + "')");
@@ -21,7 +35,7 @@
 	 });
 	</script>
         <script>
-	 var countDownDate = new Date("Jan 5, 2018 12:00:00").getTime();
+	 var countDownDate = new Date("Jan 5, 2018 00:00:00").getTime();
 	 var x = setInterval(function() {
 
 	     var now = new Date().getTime();
@@ -43,7 +57,7 @@
 	</script>
     </head>
     <body>
-        <div class="container">
+	<div class="container">
 	    <div class="main">
 	      <div class="titles">
 	    	<h1>new tab</h1>
@@ -66,15 +80,20 @@
 		</ul>
 		<ul>
 		  <li><a href="http://your-waifu-is-sh.it">your-waifu-is-sh.it</a></li> <!-- my site (best) -->
-          <li></li>
-          <li><a href="http://jisho.org">辞書</a></li>
+		  <li></li>
+		  <li><a href="http://jisho.org">辞書</a></li>
 		</ul>
 		<ul>
 		  <li><a href="https://anidex.moe/">anidex</a></li>
 		  <li><a href="https://nyaa.pantsu.cat">nyaa.cat</a></li>
 		  <li><a href="https://nyaa.si">nyaa.si</a></li>
 		</ul>
+	      </div>
 	    </div>
+	    <div class="searchbox">
+		<form name="form1" action="http://google.com/search" target="_self" method="get" >
+		    <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput"></input>
+		</form>
 	    </div>
         </div>
     </body>

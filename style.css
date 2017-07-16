@@ -1,17 +1,8 @@
 .container {
-/*  top: 0px;
-    bottom: 200px;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-
-    width: 700px;
-    height: 300px; */
     padding: 10% 0;
 }
 
 .titles {
-/*    display: inline-block; */
     margin: 18px;
 }
 
@@ -37,15 +28,14 @@ ul {
 
     border-style: solid;
     border-width: 2px;
-    border-color: #FFFFFF;
+
+/*  border-color: #FFFFFF; */
+    border-color: #000000;
 
     margin: auto;
+    margin-bottom: 5px;
 
-
-    /*position: absolute;*/
     top: 25%;
-    /*left: 25%;*/
-    /*right: 190px;*/
 
     width: 900px;
     height: 300px;
@@ -56,21 +46,30 @@ ul {
     background-size: contain;
 }
 
-.mascot {
+.searchbox {
+    display: block;
+
     border-style: solid;
     border-width: 2px;
+
+/*  border-color: #FFFFFF; */
     border-color: #000000;
 
     margin: auto;
-    top: -2px;
-    left: 500px;
+    margin-bottom: 5px;
 
-    position: absolute;
+    top: 25%;
 
-    width: 194px; /* 200 - 3 * 2 */
-    height: 300px;
+    width: 900px;
+    height: 20;
+}
 
-    overflow: hidden;
+input {
+    font-family: 'CyberpunkWaifus';
+    font-size: 14px;
+    border: none;
+    outline: none;
+    width: 100%;
 }
 
 h1 {
@@ -80,8 +79,8 @@ h1 {
 
 a {
     text-decoration: none;
-/*  color:#000000; */
-    color: #FFFFFF;
+    color:#000000;
+/*  color: #FFFFFF; */
 }
 
 a:hover {
@@ -93,6 +92,8 @@ body {
     src: url('CyberpunkWaifus.ttf');
     font-size: 15px;
 
-    background-color: #2F1E2E;
-    color: #FFFFFF;
+/*  background-color: #2F1E2E; */
+/*  color: #FFFFFF; */
+
+    background-color: #FFFFFF;
 }
