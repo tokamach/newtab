@@ -1,5 +1,4 @@
-# new tab page with mascots
-
+![demo](example.png)
 this is my new tab page.
 
 ## features
@@ -12,4 +11,3 @@ this is my new tab page.
 ## mascots
 add mascots in the mascots folder, and update `mascots.js` with a list of filenames
 
-![demo](example.png)
