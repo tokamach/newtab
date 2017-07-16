@@ -12,4 +12,7 @@ var mascots = ["mascot1.png",
 	       "mascot12.png",
 	       "mascot13.png",
 	       "mascot14.png",
-	       "mascot15.png"];
+	       "mascot15.png",
+		   "mascot16.png",
+		   "mascot17.png",
+		   "mascot18.png"];
