@@ -33,10 +33,10 @@ ul {
 
     margin: auto;
     margin-bottom: 5px;
-
     top: 25%;
-
     width: 900px;
+
+    -webkit-backdrop-filter: blur(10px);
 }
 
 #main {
@@ -61,7 +61,7 @@ input {
     font-size: 14px;
     border: none;
     outline: none;
-    background-color: #FFFFFF;
+    background-color: transparent;
 }
 
 input.searchinput {
@@ -88,4 +88,8 @@ body {
     font-size: 15px;
 
     background-color: #FFFFFF;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

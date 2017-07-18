@@ -11,7 +11,6 @@
 	     $("body").css("background-color", bg_col);
 	     $(".main").css("background-color", bg_col);
 	     $(".searchbox").css("background-color", bg_col);
-	     $("input").css("background-color", bg_col);
 
 	     $(".child").css("border-color", fg_col);
 	     $("h1").css("color", fg_col);
@@ -25,6 +24,10 @@
 	     });
 	     $("input#white").click(function() {
 		 dynaColor("#000000", "#FFFFFF");
+	     });
+	     $("input#image").click(function() {
+		 dynaColor("#FFFFFF", "#2F1E2E");
+		 $("body").css("background-image", "url('file:///Users/tom/wall/space/mix.png')");
 	     });
 	 });
 	</script>
@@ -104,6 +107,7 @@
 		    <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput" autofocus />
 		<input type="button" value="purple" id="purple" style="float: right;" />
 		<input type="button" value="white"  id="white" style="float: right;" />
+		<input type="button" value="image"  id="image" style="float: right;" />
 		</form>
 	    </div>
         </div>
