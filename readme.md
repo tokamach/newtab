@@ -1,4 +1,5 @@
 ![demo](example.png)
+![demo](example2.png)
 this is my new tab page.
 
 ## features
@@ -6,7 +7,7 @@ this is my new tab page.
 * mascots
 * countdown timer to Chuunibyou: Take On Me
 * search bar
-* live changeable colors
+* pickable colors and backgrounds
 
 ## mascots
 add mascots in the mascots folder, and update `mascots.js` with a list of filenames
