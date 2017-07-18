@@ -21,9 +21,11 @@
 	 $(document).ready(function() {
 	     $("input#purple").click(function() {
 		 dynaColor("#FFFFFF", "#2F1E2E");
+		 $("body").css("background-image", "");
 	     });
 	     $("input#white").click(function() {
 		 dynaColor("#000000", "#FFFFFF");
+		 $("body").css("background-image", "");
 	     });
 	     $("input#image").click(function() {
 		 dynaColor("#FFFFFF", "#2F1E2E");
