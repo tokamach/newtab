@@ -23,7 +23,7 @@ ul {
     margin-right: 18px;
 }
 
-.main {
+.child {
     display: block;
 
     border-style: solid;
@@ -37,6 +37,9 @@ ul {
     top: 25%;
 
     width: 900px;
+}
+
+#main {
     height: 300px;
 
     background-image: url('mascots/mascot4.gif');
@@ -45,20 +48,11 @@ ul {
     background-size: contain;
 }
 
-.searchbox {
-    display: block;
+#searchbox {
+    height: 20;
+}
 
-    border-style: solid;
-    border-width: 2px;
-
-    border-color: #000000;
-
-    margin: auto;
-    margin-bottom: 5px;
-
-    top: 25%;
-
-    width: 900px;
+#colors {
     height: 20;
 }
 
@@ -67,7 +61,11 @@ input {
     font-size: 14px;
     border: none;
     outline: none;
-    width: 100%;
+    background-color: #FFFFFF;
+}
+
+input.searchinput {
+    width: 75%;
 }
 
 h1 {
