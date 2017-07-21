@@ -49,7 +49,7 @@ ul {
 }
 
 #searchbox {
-    height: 20;
+    height: 26;
 }
 
 #colors {
@@ -59,13 +59,14 @@ ul {
 input {
     font-family: 'CyberpunkWaifus';
     font-size: 14px;
-    border: none;
     outline: none;
     background-color: transparent;
 }
 
 input.searchinput {
+    margin-top: 6px;
     width: 75%;
+    border: none;
 }
 
 h1 {
