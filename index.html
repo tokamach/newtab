@@ -20,20 +20,24 @@
 
 	 $(document).ready(function() {
 	     $("input#purple").click(function() {
-		 dynaColor("#FFFFFF", "#2F1E2E");
-		 $("body").css("background-image", "");
+		 dynaColor("#000000", "#2F1E2E");
+		 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1496116697535.jpg')");
 	     });
 	     $("input#white").click(function() {
 		 dynaColor("#000000", "#FFFFFF");
-		 $("body").css("background-image", "");
-	     });
-	     $("input#pink").click(function() {
-		 dynaColor("#FDD117", "#EC7CAC");
-		 $("body").css("background-image", "");
+		 $("body").css("background-image", "none");
 	     });
 	     $("input#mix").click(function() {
 		 dynaColor("#FFFFFF", "#2F1E2E");
 		 $("body").css("background-image", "url('file:///Users/tom/wall/space/mix.png')");
+	     });
+	     $("input#doll").click(function() {
+		 dynaColor("#FFFFFF", "#2F1E2E");
+		 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1492339770682.png')");
+	     });
+	     $("input#medusa").click(function() {
+		 dynaColor("#341715", "#FFFFFF");
+		 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1495934307051.png')");
 	     });
 	 });
 	</script>
@@ -43,11 +47,19 @@
 	     $("#main").css("background-image", "url('mascots/" + mascot + "')");
 	 }
 
+	 function hideMascot()
+	 {
+	     $("#main").css("background-image", "none");
+	 }
+
 	 $(document).ready(function() {
-	     $("h1").click(function() {
+	     $("h1#a").click(function() {
 		 var mascot = mascots[Math.floor(Math.random()*mascots.length)];
 		 setMascot(mascot);
 	     });
+
+	     $("h1#b").click(hideMascot);
+
 	     var mascot = mascots[Math.floor(Math.random()*mascots.length)];
 	     setMascot(mascot);
 	 });
@@ -78,8 +90,8 @@
 	<div class="container">
 	    <div class="child" id="main">
 	      <div class="titles">
-	    	<h1>new tab</h1>
-	    	<h1>chuu2 in: <span id="timer"></span></h1>
+	    	<h1 id="a">new tab</h1>
+	    	<h1 id="b">chuu2 in: <span id="timer"></span></h1>
 	      </div>
 	      <div class="links">
 		<ul>
@@ -111,10 +123,11 @@
 	    <div class="child" id="searchbox">
 		<form name="form1" action="http://google.com/search" target="_self" method="get" >
 		    <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput" autofocus />
-		<input type="button" value="purple" id="purple" style="float: right;" />
-		<input type="button" value="white"  id="white" style="float: right;" />
-		<input type="button" value="pink"  id="pink" style="float: right;" />
-		<input type="button" value="mix"  id="mix" style="float: right;" />
+		    <input type="button" value="purple" id="purple" style="float: right;" />
+		    <input type="button" value="white"  id="white" style="float: right;" />
+		    <input type="button" value="mix"  id="mix" style="float: right;" />
+		    <input type="button" value="doll"  id="doll" style="float: right;" />
+		    <input type="button" value="medusa"  id="medusa" style="float: right;" />
 		</form>
 	    </div>
         </div>
