@@ -1,7 +1,6 @@
 .container {
     padding: 10% 0;
-}
-
+} 
 .titles {
     margin: 18px;
 }
@@ -36,7 +35,8 @@ ul {
     top: 25%;
     width: 900px;
 
-    -webkit-backdrop-filter: blur(10px);
+/*  -webkit-backdrop-filter: blur(10px); */
+    -webkit-backdrop-filter: blur(10px) saturate(5%);
 }
 
 #main {
