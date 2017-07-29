@@ -2,134 +2,134 @@
 <html>
     <head>
         <title>new tab</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="mascots/mascots.js"></script>
-	<script>
-	 function dynaColor(fg_col, bg_col)
-	 {
-	     $("body").css("background-color", bg_col);
-	     $(".main").css("background-color", bg_col);
-	     $(".searchbox").css("background-color", bg_col);
-
-	     $(".child").css("border-color", fg_col);
-	     $("h1").css("color", fg_col);
-	     $("a").css("color", fg_col);
-	     $("input").css("color", fg_col);
-	 }
-
-	 $(document).ready(function() {
-	     $("input#purple").click(function() {
-		 dynaColor("#000000", "#2F1E2E");
-		 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1496116697535.jpg')");
-	     });
-	     $("input#white").click(function() {
-		 dynaColor("#000000", "#FFFFFF");
-		 $("body").css("background-image", "none");
-	     });
-	     $("input#doll").click(function() {
-		 dynaColor("#FFFFFF", "#2F1E2E");
-		 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1492339770682.png')");
-	     });
-	     $("input#snake").click(function() {
-		 dynaColor("#341715", "#FFFFFF");
-		 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1495934307051.png')");
-	     });
-	     $("input#medusa").click(function() {
-		 dynaColor("#FFFFFF", "#2F1E2E");
-		 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1495935500941.png')");
-	     });
-	 });
-	</script>
-	<script>
-	 function setMascot(mascot)
-	 {
-	     $("#main").css("background-image", "url('mascots/" + mascot + "')");
-	 }
-
-	 function hideMascot()
-	 {
-	     $("#main").css("background-image", "none");
-	 }
-
-	 $(document).ready(function() {
-	     $("h1#a").click(function() {
-		 var mascot = mascots[Math.floor(Math.random()*mascots.length)];
-		 setMascot(mascot);
-	     });
-
-	     $("h1#b").click(hideMascot);
-
-	     var mascot = mascots[Math.floor(Math.random()*mascots.length)];
-	     setMascot(mascot);
-	 });
-	</script>
         <script>
-	 var countDownDate = new Date("Jan 5, 2018 00:00:00").getTime();
-	 var x = setInterval(function() {
+         function dynaColor(fg_col, bg_col)
+         {
+             $("body").css("background-color", bg_col);
+             $(".main").css("background-color", bg_col);
+             $(".searchbox").css("background-color", bg_col);
 
-	     var now = new Date().getTime();
-	     var distance = countDownDate - now;
-	     
-	     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	     var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	     
-	     document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-						       + minutes + "m " + seconds + "s ";
-	     
-	     if (distance < 0) {
-		 clearInterval(x);
-		 document.getElementById("timer").innerHTML = "GO WATCH IT!";
-	     }
-	 }, 1000);
-	</script>
+             $(".child").css("border-color", fg_col);
+             $("h1").css("color", fg_col);
+             $("a").css("color", fg_col);
+             $("input").css("color", fg_col);
+         }
+
+         $(document).ready(function() {
+             $("input#purple").click(function() {
+                 dynaColor("#000000", "#2F1E2E");
+                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1496116697535.jpg')");
+             });
+             $("input#white").click(function() {
+                 dynaColor("#000000", "#FFFFFF");
+                 $("body").css("background-image", "none");
+             });
+             $("input#doll").click(function() {
+                 dynaColor("#FFFFFF", "#2F1E2E");
+                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1492339770682.png')");
+             });
+             $("input#snake").click(function() {
+                 dynaColor("#341715", "#FFFFFF");
+                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1495934307051.png')");
+             });
+             $("input#medusa").click(function() {
+                 dynaColor("#FFFFFF", "#2F1E2E");
+                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1495935500941.png')");
+             });
+         });
+        </script>
+        <script>
+         function setMascot(mascot)
+         {
+             $("#main").css("background-image", "url('mascots/" + mascot + "')");
+         }
+
+         function hideMascot()
+         {
+             $("#main").css("background-image", "none");
+         }
+
+         $(document).ready(function() {
+             $("h1#a").click(function() {
+                 var mascot = mascots[Math.floor(Math.random()*mascots.length)];
+                 setMascot(mascot);
+             });
+
+             $("h1#b").click(hideMascot);
+
+             var mascot = mascots[Math.floor(Math.random()*mascots.length)];
+             setMascot(mascot);
+         });
+        </script>
+        <script>
+         var countDownDate = new Date("Jan 5, 2018 00:00:00").getTime();
+         var x = setInterval(function() {
+
+             var now = new Date().getTime();
+             var distance = countDownDate - now;
+             
+             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+             
+             document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+                                                       + minutes + "m " + seconds + "s ";
+             
+             if (distance < 0) {
+                 clearInterval(x);
+                 document.getElementById("timer").innerHTML = "GO WATCH IT!";
+             }
+         }, 1000);
+        </script>
     </head>
     <body>
-	<div class="container">
-	    <div class="child" id="main">
-	      <div class="titles">
-	    	<h1 id="a">new tab</h1>
-	    	<h1 id="b">chuu2 in: <span id="timer"></span></h1>
-	      </div>
-	      <div class="links">
-		<ul>
-		  <li><a href="https://www.reddit.com">reddit</a></li>
-		  <li><a href="https://www.twitter.com">twitter</a></li>
-		  <li><a href="https://www.github.com">github</a></li>
-		</ul>
-		<ul>
-		  <li><a href="https://boards.4chan.org/o/">/o/</a></li>
-		  <li><a href="https://boards.4chan.org/lit/">/lit/</a></li>
-		  <li><a href="https://boards.4chan.org/jp/">/jp/</a></li>
-		  <li><a href="https://boards.4chan.org/c/">/c/</a></li> <!-- yes -->
-		  <li><a href="https://boards.4chan.org/w/">/w/</a></li>
-		  <li><a href="https://boards.4chan.org/wg/">/wg/</a></li>
-		  <li><a href="https://boards.4chan.org/vg/">/vg/</a></li>
-		</ul>
-		<ul>
-		  <li><a href="http://your-waifu-is-sh.it">your-waifu-is-sh.it</a></li> <!-- my site (best) -->
-		  <li></li>
-		  <li><a href="http://jisho.org">辞書</a></li>
-		</ul>
-		<ul>
-		  <li><a href="https://anidex.moe/">anidex</a></li>
-		  <li><a href="https://nyaa.pantsu.cat">nyaa.cat</a></li>
-		  <li><a href="https://nyaa.si">nyaa.si</a></li>
-		</ul>
-	      </div>
-	    </div>
-	    <div class="child" id="searchbox">
-		<form name="form1" action="http://google.com/search" target="_self" method="get" >
-		    <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput" autofocus />
-		    <input type="button" value="purple" id="purple" style="float: right;" />
-		    <input type="button" value="white"  id="white" style="float: right;" />
-		    <input type="button" value="doll"  id="doll" style="float: right;" />
-		    <input type="button" value="snake"  id="snake" style="float: right;" />
-		    <input type="button" value="medusa"  id="medusa" style="float: right;" />
-		</form>
-	    </div>
+        <div class="container">
+            <div class="child" id="main">
+              <div class="titles">
+                <h1 id="a">new tab</h1>
+                <h1 id="b">chuu2 in: <span id="timer"></span></h1>
+              </div>
+              <div class="links">
+                <ul>
+                  <li><a href="https://www.reddit.com">reddit</a></li>
+                  <li><a href="https://www.twitter.com">twitter</a></li>
+                  <li><a href="https://www.github.com">github</a></li>
+                </ul>
+                <ul>
+                  <li><a href="https://boards.4chan.org/o/">/o/</a></li>
+                  <li><a href="https://boards.4chan.org/lit/">/lit/</a></li>
+                  <li><a href="https://boards.4chan.org/jp/">/jp/</a></li>
+                  <li><a href="https://boards.4chan.org/c/">/c/</a></li> <!-- yes -->
+                  <li><a href="https://boards.4chan.org/w/">/w/</a></li>
+                  <li><a href="https://boards.4chan.org/wg/">/wg/</a></li>
+                  <li><a href="https://boards.4chan.org/vg/">/vg/</a></li>
+                </ul>
+                <ul>
+                  <li><a href="http://your-waifu-is-sh.it">your-waifu-is-sh.it</a></li> <!-- my site (best) -->
+                  <li></li>
+                  <li><a href="http://jisho.org">辞書</a></li>
+                </ul>
+                <ul>
+                  <li><a href="https://anidex.moe/">anidex</a></li>
+                  <li><a href="https://nyaa.pantsu.cat">nyaa.cat</a></li>
+                  <li><a href="https://nyaa.si">nyaa.si</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="child" id="searchbox">
+                <form name="form1" action="http://google.com/search" target="_self" method="get" >
+                    <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput" autofocus />
+                    <input type="button" value="purple" id="purple" style="float: right;" />
+                    <input type="button" value="white"  id="white" style="float: right;" />
+                    <input type="button" value="doll"  id="doll" style="float: right;" />
+                    <input type="button" value="snake"  id="snake" style="float: right;" />
+                    <input type="button" value="medusa"  id="medusa" style="float: right;" />
+                </form>
+            </div>
         </div>
     </body>
 </html>
