@@ -5,6 +5,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="mascots/mascots.js"></script>
+	<script type="text/javascript" src="js/search.js"></script>
         <script>
          function dynaColor(fg_col, bg_col)
          {
@@ -121,7 +122,7 @@
               </div>
             </div>
             <div class="child" id="searchbox">
-                <form name="form1" action="http://google.com/search" target="_self" method="get" >
+                <form name="form1" onSubmit="parseAndSearch(); return false;">
                     <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput" autofocus />
                     <input type="button" value="purple" id="purple" style="float: right;" />
                     <input type="button" value="white"  id="white" style="float: right;" />
