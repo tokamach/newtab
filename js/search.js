@@ -21,6 +21,5 @@ function parseAndSearch()
     }
     var rest = str.slice(colPos + 1);
     var searchStr = providers[provider].replace("$TERM$", rest);
-    alert(searchStr);
     window.location.assign(decodeURI(searchStr));
 }
