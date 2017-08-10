@@ -22,6 +22,10 @@ ul {
     margin-right: 18px;
 }
 
+li {
+    text-align: left;
+}
+
 .child {
     display: block;
 
