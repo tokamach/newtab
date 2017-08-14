@@ -5,6 +5,7 @@ var providers = {
     "anidex":"https://anidex.info/?q=$TERM$",
     "yt":"https://www.youtube.com/results?search_query=$TERM$",
     "jisho":"https://jisho.org/search/$TERM$",
+    "trans":"https://translate.google.com/#auto/en/$TERM$",
     "http":"http:$TERM$"
 }
 
