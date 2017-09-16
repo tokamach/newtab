@@ -1,3 +1,8 @@
+@font-face {
+    font-family:'CyberpunkWaifus'
+    src: url('/CyberpunkWaifus.ttf');
+}
+
 .container {
     padding: 10% 0;
 } 
@@ -89,7 +94,6 @@ a:hover {
 
 body {
     font-family:'CyberpunkWaifus';
-    src: url('CyberpunkWaifus.ttf');
     font-size: 15px;
 
     background-color: #FFFFFF;
@@ -98,3 +102,4 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
