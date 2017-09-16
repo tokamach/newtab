@@ -1,5 +1,5 @@
 .DS_Store
-mascots/*.png
-mascots/*.gif
-mascots/*.jpg
-mascots/*.jpeg
+#mascots/*.png
+#mascots/*.gif
+#mascots/*.jpg
+#mascots/*.jpeg
