@@ -38,5 +38,6 @@ var mascots = [
     "mascot37.gif",
     "mascot38.png",
     "mascot39.png",
-    "mascot40.png"
+    "mascot40.png",
+    "mascot41.png"
 ];
