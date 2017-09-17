@@ -7,42 +7,6 @@
         <script type="text/javascript" src="mascots/mascots.js"></script>
 	<script type="text/javascript" src="js/search.js"></script>
         <script>
-         function dynaColor(fg_col, bg_col)
-         {
-             $("body").css("background-color", bg_col);
-             $(".main").css("background-color", bg_col);
-             $(".searchbox").css("background-color", bg_col);
-
-             $(".child").css("border-color", fg_col);
-             $("h1").css("color", fg_col);
-             $("a").css("color", fg_col);
-             $("input").css("color", fg_col);
-         }
-
-         $(document).ready(function() {
-             $("input#purple").click(function() {
-                 dynaColor("#000000", "#2F1E2E");
-                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1496116697535.jpg')");
-             });
-             $("input#white").click(function() {
-                 dynaColor("#000000", "#FFFFFF");
-                 $("body").css("background-image", "none");
-             });
-             $("input#doll").click(function() {
-                 dynaColor("#FFFFFF", "#2F1E2E");
-                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1492339770682.png')");
-             });
-             $("input#snake").click(function() {
-                 dynaColor("#341715", "#FFFFFF");
-                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1495934307051.png')");
-             });
-             $("input#medusa").click(function() {
-                 dynaColor("#FFFFFF", "#2F1E2E");
-                 $("body").css("background-image", "url('file:///Users/tom/wall/monogatari/1495935500941.png')");
-             });
-         });
-        </script>
-        <script>
          function setMascot(mascot)
          {
              $("#main").css("background-image", "url('mascots/" + mascot + "')");
@@ -130,11 +94,11 @@
             <div class="child" id="searchbox">
                 <form name="form1" onSubmit="parseAndSearch(); return false;">
                     <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput" autofocus />
-                    <!--<input type="button" value="purple" id="purple" style="float: right;" /> --> 
-                    <!--<input type="button" value="white"  id="white" style="float: right;" />  -->
-                    <!--<input type="button" value="doll"  id="doll" style="float: right;" />    -->
-                    <!--<input type="button" value="snake"  id="snake" style="float: right;" />  -->
-                    <!--<input type="button" value="medusa"  id="medusa" style="float: right;" />-->
+                    <input type="button" value="felix" onClick="setMascot('mascot39.png');" style="float: right;"/> 
+                    <input type="button" value="mado"  onClick="setMascot('mascot14.png');" style="float: right;"/> 
+                    <input type="button" value="homu"  onClick="setMascot('mascot8.png');"  style="float: right;"/> 
+                    <input type="button" value="yui"   onClick="setMascot('mascot33.png');" style="float: right;"/> 
+                    <input type="button" value="tohru" onClick="setMascot('mascot19.png');" style="float: right;"/> 
                 </form>
             </div>
         </div>
