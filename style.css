@@ -73,6 +73,10 @@ input {
     background-color: transparent;
 }
 
+input[type=button] {
+    padding-top: 5px;
+}
+
 input.searchinput {
     margin-top: 6px;
     width: 55%;
