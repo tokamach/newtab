@@ -86,6 +86,7 @@ input.searchinput {
 h1 {
     -webkit-user-select: none;
     user-select: none;
+    margin: auto;
 }
 
 a {
