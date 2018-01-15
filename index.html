@@ -25,7 +25,7 @@
 
              $("h1#b").click(hideMascot);
 
-	     var d = Date();
+	     var d = new Date();
 	     if(!(d.getDay() >= 0 && d.getDay < 5 && d.getHours() >= 9 && d.getHours() <= 5))
 	     {
 		 var mascot = mascots[Math.floor(Math.random()*mascots.length)];
