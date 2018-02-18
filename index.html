@@ -52,7 +52,7 @@
              
              if (distance < 0) {
                  clearInterval(x);
-                 document.getElementById("timer").innerHTML = "GO WATCH IT!";
+                 document.getElementById("timer").innerHTML = "";
              }
          }, 1000);
         </script>
@@ -68,43 +68,36 @@
               <div class="links">
                 <ul>
                   <li><a href="https://www.reddit.com">reddit</a></li>
-                  <li><a href="https://www.reddit.com/r/me_irl">me_irl</a></li>
-                  <li><a href="https://www.reddit.com/r/programmingcirclejerk">pcj</a></li>
-                  <li><a href="https://www.reddit.com/r/badphilosophy">badphil</a></li>
-                  <br>
                   <li><a href="https://www.twitter.com">twitter</a></li>
-                  <li><a href="https://www.github.com">github</a></li>
+                  <br>
+                  <li><a href="https://8ch.net/leftypol/catalog.html">/leftypol/</a></li>
+                  <li><a href="https://8ch.net/leftpol/catalog.html">/leftpol/</a></li>
+                  <li><a href="https://8ch.net/leftyweebpol/catalog.html">/leftyweebpol/</a></li>
+		  <br>
+                  <li><a href="https://bank.barclays.co.uk">barclays</a></li>
+                  <li><a href="https://portal.lancaster.ac.uk/student_portal">moodle</a></li>
                 </ul>
                 <ul>
                   <li><a href="https://boards.4chan.org/a/">/a/</a></li>
-                  <li><a href="https://boards.4chan.org/c/">/c/</a></li> <!-- yes -->
+                  <li><a href="https://boards.4chan.org/c/">/c/</a></li>
                   <li><a href="https://boards.4chan.org/jp/">/jp/</a></li>
                   <li><a href="https://boards.4chan.org/lit/">/lit/</a></li>
                   <li><a href="https://boards.4chan.org/o/">/o/</a></li>
                   <li><a href="https://boards.4chan.org/u/">/u/</a></li>
                   <li><a href="https://boards.4chan.org/w/">/w/</a></li>
                   <li><a href="https://boards.4chan.org/wg/">/wg/</a></li>
-                </ul>
-                <ul>
-                  <li><a href="https://8ch.net/leftypol/catalog.html">/leftypol/</a></li>
-                  <li><a href="https://8ch.net/leftpol/catalog.html">/leftpol/</a></li>
-                  <li><a href="https://8ch.net/leftyweebpol/catalog.html">/leftyweebpol/</a></li>
-                  <br>
-                  <li><a href="https://bank.barclays.co.uk">barclays</a></li>
-                  <li><a href="https://portal.lancaster.ac.uk/student_portal">lancs</a></li>
-                  <li><a href="https://lancaster.ombiel.co.uk/campusm/home#menu">ilancaster</a></li>
+                  <li><a href="https://boards.4chan.org/y/">/u/</a></li>
                 </ul>
               </div>
             </div>
             <div class="child" id="searchbox">
                 <form name="form1" onSubmit="parseAndSearch(); return false;">
                     <input type="text" autocomplete="off" placeholder="where shall we go today..." name="q" class="searchinput"/>
+                    <input type="button" value="cs student" onClick="setMascot('mascot38.png');" style="float: right;"/> 
                     <input type="button" value="felix"    onClick="setMascot('mascot39.png');" style="float: right;"/> 
-                    <input type="button" value="mado"     onClick="setMascot('mascot14.png');" style="float: right;"/> 
-                    <input type="button" value="homu"     onClick="setMascot('mascot8.png');"  style="float: right;"/> 
                     <input type="button" value="madohomu" onClick="setMascot('mascot41.png');" style="float: right;"/> 
-                    <input type="button" value="yui"      onClick="setMascot('mascot33.png');" style="float: right;"/> 
-                    <input type="button" value="tohru"    onClick="setMascot('mascot19.png');" style="float: right;"/> 
+                    <input type="button" value="yui"      onClick="setMascot('mascot33.png');" style="float: right;"/>
+                    <input type="button" value="hanako"   onClick="setMascot('mascot7.png');"  style="float: right;"/>
                 </form>
             </div>
         </div>
