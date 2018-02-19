@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
 @font-face {
-/*  font-family:'CyberpunkWaifus'; */
-    /*  src: url('/CyberpunkWaifus.woff'); */
-    font-family: 'Nanum Myeongjo', serif;
+    font-family:"CyberpunkWaifus";
+    src: url('/fonts/CyberpunkWaifus.woff');
 }
 
 .container {
