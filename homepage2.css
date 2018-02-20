@@ -54,6 +54,10 @@ li {
     background-color: #e5e1be;
 }
 
+#headshot {
+    height: 600px;
+}
+
 h1 {
     -webkit-user-select: none;
     user-select: none;
