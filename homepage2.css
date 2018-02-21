@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
 @font-face {
-/*  font-family:'CyberpunkWaifus'; */
-    /*  src: url('/CyberpunkWaifus.woff'); */
     font-family: 'Nanum Myeongjo', serif;
 }
 
@@ -44,13 +42,10 @@ li {
 
     margin: 10px;
 
-    -webkit-backdrop-filter: blur(10px) saturate(5%);
-
 }
 
 #main {
     height: 300px;
-
     background-color: #e5e1be;
 }
 
@@ -62,8 +57,6 @@ img {
 }
 
 h1 {
-    -webkit-user-select: none;
-    user-select: none;
     margin: auto;
 }
 
