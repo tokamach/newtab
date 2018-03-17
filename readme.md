@@ -1,6 +1,6 @@
 ![demo](example.png)
 ![demo](example2.png)
-cool and good new tab page
+cool and good new tab pages
 
 ## features
 * simple and easy to modify
