@@ -1,11 +1,11 @@
 ![demo](example.png)
 ![demo](example2.png)
+![demo](example3.png)
 cool and good new tab pages
 
 ## features
 * simple and easy to modify
 * mascots
-* cool and useful countdown timer to Chuunibyou: Take On Me
 * search bar with multiple engines
 * click the upper h1 to choose a random mascot, click the lower h1 to hide
 
