@@ -45,9 +45,35 @@ a {
     color:#000000;
 }
 
+.big-aesthetic-yellow {
+    color:#FFF700;
+    text-shadow: 5px 5px #7F7B1E, 10px 10px #4f4b1e, 15px 15px #1f1b10, 20px 20px #000000;
+}
+
+.big-aesthetic-pink {
+    color: #C11165;
+    text-shadow: 5px 5px #970E4E, 10px 10px #570b2e, 15px 15px #37071E, 20px 20px #000000;
+}
+
+div#bg {
+    content: "";
+    position: fixed;
+    left: -10%;
+    top: -10%;
+    z-index: -1;
+
+    display: block;
+    background: url(/img/1449763727551.jpg);
+    background-size:cover;
+    width: 120%;
+    height: 120%;
+
+    filter: blur(10px);
+}
+
 body {
-    font-family: 'EB Garamond', serif;
+    font-family: serif;
     /*background: url(img/dots.png) repeat center center fixed;*/
-    background: #B7E1EA;
+    /*background: #B7E1EA;*/
     font-size: 12pt;
 }
