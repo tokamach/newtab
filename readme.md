@@ -1,6 +1,7 @@
 ![demo](example.png)
 ![demo](example2.png)
 ![demo](example3.png)
+![demo](example4.png)
 cool and good new tab pages
 
 ## features
